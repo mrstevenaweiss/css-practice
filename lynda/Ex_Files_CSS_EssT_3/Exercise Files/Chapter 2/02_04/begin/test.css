@@ -1,0 +1,55 @@
+/* Old Grid */
+
+.container {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.col {
+  float: left;
+  border: 1px solid red;
+  text-align: center;
+  display: block;
+}
+
+.col-1 {
+  width: 16.66%;
+}
+.col-2 {
+  width: 33%;
+}
+.col-3 {
+  width: 46%;
+}
+.col-4 {
+  width: 66%;
+}
+.col-5 {
+  width: 82.66%;
+}
+.col-6 {
+  width: 100%;
+}
+
+/* Using Grid */
+
+.grid-container {
+  display: grid;
+  grid-gap: 4px;
+  /* 3 columns */
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 300px 175px;
+}
+
+.grid-item {
+  border: 1px dotted #222;
+  text-align: center;
+}
